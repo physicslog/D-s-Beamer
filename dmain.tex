@@ -1,0 +1,119 @@
+\documentclass[10pt]{beamer}
+\usetheme{Dresden} % theme
+
+% !!!!!!!!!!!!!!!!!! NO EDIT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!|
+\setbeamertemplate{headline}{}  % no headline
+\usenavigationsymbolstemplate{} % no navigation
+\setbeamertemplate{sections/subsections in toc}[square] % setting toc numbering style to square.
+
+%= Footer; Starts ===============================================|
+\setbeamertemplate{footline}{   % custom footline
+    \ifnum\insertframenumber=1
+        % No footer on the first (front) page
+    \else
+        \begin{beamercolorbox}[colsep=1.5pt]{upper separation line foot}
+        \end{beamercolorbox}
+        \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
+        leftskip=.3cm,rightskip=.3cm plus1fil]{author in head/foot}%
+        \leavevmode{\usebeamerfont{author in head/foot}\insertauthor}%
+        \ifdefined\insertweb
+          \if\relax\detokenize\expandafter{\insertweb}\relax
+            % empty -> print nothing
+          \else
+            $\mid$ \insertweb
+          \fi
+        \fi
+        \hfill
+        {\usebeamerfont{institute in head/foot}\usebeamercolor[fg]{institute in head/foot}\insertshortdate{} \hspace*{1cm}}%
+        \end{beamercolorbox}%
+        \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
+        leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+        {\usebeamerfont{title in head/foot}\insertshorttitle}%
+        \hfill
+        {\Large \insertframenumber{}} {\tiny of \inserttotalframenumber}%
+        \end{beamercolorbox}%
+        \begin{beamercolorbox}[colsep=1.5pt]{lower separation line foot}
+        \end{beamercolorbox}
+    \fi
+}
+
+%= Footer; Ends ===============================================|
+
+%= Title page; Starts ===============================================|
+% Added department macros
+\newcommand{\department}[1]{%
+  \def\insertdepartment{#1}%
+}
+
+% Added event macros
+\newcommand{\event}[1]{%
+  \def\insertevent{#1}%
+}
+
+% Added website url macros
+\newcommand{\web}[1]{%
+  \def\insertweb{#1}%
+}
+
+% title page
+\setbeamertemplate{title page}{
+  \vbox{}
+  \vfill
+  \begingroup
+    \centering
+    \usebeamertemplate{title}
+    \vskip2em
+    {\color{structure} \insertauthor}\par
+    \vskip1em
+    \ifdefined\insertdepartment
+      {\small \insertdepartment}\par
+    \fi
+      {\small \insertinstitute}\par
+    \vskip3em
+    \ifdefined\insertevent
+      {\small \insertevent}\par
+    \fi
+    {\small \insertdate}\par
+  \endgroup
+  \vfill
+}
+%= Title page; Ends ===============================================|
+
+% !!!!!!!!!!!!!!!!!! NO EDIT ABOVE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!|
+
+%--------------------------------------------------------------|
+% Packages:
+% \usepackage{hyperref}
+% \usepackage{xcolor}
+% \usepackage{graphicx}
+
+%--------------------------------------------------------------|
+%Author details:
+
+\title{Presentation Title}
+\author{Author Name}
+\web{} % URL if any or just leave it empty
+\department{Deparment Name}
+\institute{University Name}
+\event{Event Name}
+\date{19 Nov 2026}
+%---------------------------------------------------------------|
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+%------------ Section and frames starts from here -------------|
+
+\section{Section Title}
+\begin{frame}{Frame Title}
+...
+\end{frame}
+
+\end{document}
