@@ -8,15 +8,15 @@ A clean, minimalist LaTeX Beamer presentation template built on the **Dresden** 
 
 You can view the compiled PDF of this presentation template directly in your browser without installing $\LaTeX$ locally:
 
-[📄 **View the compiled PDF**](https://latexonline.cc/compile?git=https://github.com/physicslog/<repo-name>&target=main.tex)
+[📄 **View the compiled PDF**](https://latexonline.cc/compile?git=https://github.com/physicslog/D-s-Beamer&target=main.tex)
 
 Alternatively, you can instantly open and edit this template in a private Overleaf project:
 
-[![Open in Overleaf](https://img.shields.io/badge/Open%20in-Overleaf-479e47?logo=overleaf)](https://www.overleaf.com/docs?snip_uri=https://github.com/physicslog/<repo-name>/archive/refs/heads/main.zip&main_document=main.tex)
+[![Open in Overleaf](https://img.shields.io/badge/Open%20in-Overleaf-479e47?logo=overleaf)](https://www.overleaf.com/docs?snip_uri=https://github.com/physicslog/D-s-Beamer/archive/refs/heads/main.zip&main_document=main.tex)
 
 ## 📥 Quick Download
 
-You can download the standalone template file directly here: [**Download `main.tex`**](https://raw.githubusercontent.com/physicslog/<repo-name>/refs/heads/main/main.tex)
+You can download the standalone template file directly here: [**Download `main.tex`**](https://raw.githubusercontent.com/physicslog/D-s-Beamer/refs/heads/main/main.tex)
 
 ---
 
